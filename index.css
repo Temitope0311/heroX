@@ -1,0 +1,135 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+}
+
+#left-container,
+#right-container{
+    width: 50%;
+    height: 100%;
+}
+
+/* LEFT PART OF THE WEBSITE */
+#left-container {
+    padding: 0 24px;
+    background-color: aqua;
+
+}
+
+#left-container > div {
+    width: 90%;
+    max-width: 600px;
+    margin: 0  auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+header{
+    padding: 16px 0;
+    font-size: smaller;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+nav a{
+    color: black;
+}
+
+
+#general{
+    margin: auto 0;
+}
+
+#content h1{
+    font-size: 25px;
+}
+
+#Hero{
+     font-size: 15px;
+     margin: 24px 0;
+}
+
+#btnflex{
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn{
+    display: flex;
+    background: blue;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: white;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 8px 16px;
+}
+
+
+
+   /* RIGHT PART OF THE WEBSITE */
+#right-container{
+    background: linear-gradient(to left bottom ,blue, red, yellow);
+}
+
+#right-container img{
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* mobile to desktop */
+@media (min-width: 1024px) {
+
+}
+
+/* deskttop to mobile */
+@media (max-width: 1024px) {
+    #content {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-wrap: wrap;
+    }
+    #content {
+        font-size: 16px;
+    }
+
+    #btnflex {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575px) {
+    #left-container {
+        width: 100%;
+    }
+    #right-container {
+        display: none
+    }
+
+}

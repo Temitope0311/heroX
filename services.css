@@ -1,0 +1,51 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#servh{
+    color: black;
+    background: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   
+body {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200vh;
+   ;
+}
+
+.flex-child {
+    text-align: center;
+    flex: 1;
+}
+
+.flex-child p {
+    margin-bottom: 16PX;
+}
+
+#left-container{
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#middle-container{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-container{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
